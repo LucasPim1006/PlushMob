@@ -1,147 +1,113 @@
-@font-face {
-    font-family: 'Minecraft';
-    src: url('fonts/minecraft_standard/MinecraftStandard.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'MinecraftPE';
-    src: url('fonts/mc-ten-lowercase-alt.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-h2{
-    font-weight: normal;
-}
-* {
-    margin: 0;
-    box-sizing: border-box;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLUSHMOB - Início</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="padrao.css">
+</head>
 
-    font-family: "Minecraft", sans-serif;
-}
-body {
-    background-color: rgba(63, 63, 63, 0.685);
-    color: rgb(238, 238, 238);
-   
-   
-    min-height: 100vh;
-    background-image: url(Imagens/terra.png);
+<body>
     
-    background-size: 5%;
-    
-}
-main{
-    display: grid;
-    grid-template-columns: 3fr 8fr 1fr 8fr 1fr 8fr 1fr 8fr 3fr;
-    grid-template-rows: 55px 400px 70px 320px 55px;
-}
+    <header class="parteFixaTitulo">
+        <div class="logo">
+            <a href="index.html"><img class="imgLogo" src="Imagens/PLUSHMOB.png" alt="Logo PlushMob"></a>
+        </div>
+        <h1 class="titulo">PLUSHMOB</h1>
+        
+        <nav class="navMenu">
+            <ul>
+                <li><a href="index.html" class="ativo">Início</a></li>
+                <li><a href="quemSomos.html">Quem Somos</a></li>
+                
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bannerPrincipal">
+        <div class="conteudoBanner">
+            <h2>LEVE SEU MOB FAVORITO PARA CASA!</h2>
+            <p>Pelúcias exclusivas com até 20% de desconto nesta semana.</p>
+            <a href="grade.html" class="btnBanner">COMPRAR AGORA</a>
+        </div>
+    </section>
+    <main class="conteudoPrincipal">
+       
 
+        <section class="chamadaMarketing">
+            <h2>Temos diversas pelúcias para o seu gosto!</h2>
+        </section>
+        <h2 class="informacaoDestaques">Podutos em destaques:</h2>
 
-
-
-.bannerPrincipal {
-    width: 100%;
-    height: 370px;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    background-image: url(Imagens/BANNER.png);
-    text-align: center;
-    margin-top: 100px;
-
-}
-
-
-.conteudoBanner {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+        <div class="blocoProduto1">
+            <div class="informacoes">
+                <h2>Steve</h2>
+                <p>R$ 59,90</p>
+            </div>
+        </div>
+        <div class="blocoProduto2">
+            <div class="informacoes">
+                <h2>Raposa</h2>
+                <p>R$ 59,90</p>
+            </div>
+        </div>
+        <div class="blocoProduto3">
+            <div class="informacoes">
+                <h2>Aranha</h2>
+                <p>R$ 59,90</p>
+            </div>
+        </div>
+        <div class="blocoProduto4">
+            <div class="informacoes">
+                <h2>Creeper</h2>
+                <p>R$ 64,90</p>
+            </div>
+        </div>
+        <div class="rodape">
+            <div class="imagem">
+                <p>PLUSHMOB</p>
+            </div>
+           
+        
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                
+            </ul>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                
+            </ul>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CIS-A2K_Instagram_Icon_%28Black%29.svg/1280px-
+            CIS-A2K_Instagram_Icon_%28Black%29.svg.png?utm_source=br.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/960px-X_icon.svg.png" alt="">
+            <img src="Imagens/tiktok.png" alt="">
+            <img src="Imagens/facebook.png" alt="">
   
-}
+
+            
+        </div>
+        <div class="rodapeEmBaixo">
+            <p>&copy; 2026 PlushMob. Todos os direitos reservados.</p>
+
+        </div>
+
+        
+    </main>
+
+ 
 
 
-.bannerPrincipal h2 {
-    font-size: 40px;
-    color: #ffffff;
-    text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.35);
-    letter-spacing: 1px;
-    
-    margin-bottom: 50px;
-    
+   
 
-}
-.rodape{
-    grid-column: 1/10;
-    grid-row: 4;
-    display: flex;
-    font-size: 12px;
-    background-color: #3d3d3d;
-    color: rgb(228, 228, 228);
-    background-image: url(Imagens/rodape.png);
-    background-size: 5%;
-    
-}
-.imagem{
-    background-image: url(Imagens/PLUSHMOB.png);
-    background-size:cover;
-    margin-top: 50px;
-    margin-right: 240px;
-    margin-left: 50px;
-    width: 80px;
-    height: 80px;
-    border-radius: 5%;
-    box-shadow: 0px 0px 5px rgb(0, 0, 0);
-    
-}
-.rodape ul{
-    width: 27%;
-    
-    margin-top: 40px;
-    font-weight: normal;
-}
-.rodape p{
-    margin-top: 100px;
-    font-size: 50px;
-    font-family: 'MinecraftPE', sans-serif;
-    text-shadow: 3px 3px 2px black;
-    
-}
-.rodape img{
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    margin-top: 100px;
-    
-    border-radius: 100%;
-    
-    
-}
-.rodapeEmBaixo{
-    grid-column: 1/10;
-    grid-row: 5;
-    background-image: url(Imagens/rodapeembaixo.png);
-    background-size: 5%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
-}
-.rodapeEmBaixo p{
-    color: rgb(209, 209, 209);
-    font-size: 10px;
-    
-}
-.sobreNosTexto{
-    grid-column: 2/9;
-    grid-row: 2;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.548);
-    font-size: 19px;
-    letter-spacing: 0.7px;
-}
-
-
+</body>
+</html>
